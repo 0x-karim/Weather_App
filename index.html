@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/Weathr_Icon.png" type="image/x-icon">
@@ -61,6 +64,10 @@
     <div class="main">
         <div class="container">
             <div class="row mx-2">
+                <div class="col-12 alert-message text-white d-flex flex-column align-items-center justify-content-center rounded-3">
+                    <p class="w-75 text-center text-info pb-5"> Please allow the site to access your location to display the weather status ..... </p>
+                    <span class="loader "></span>
+                </div>
             </div>
         </div>
     </div>
