@@ -21,6 +21,10 @@ let searchTerm ;
             coorDinates.push(position.coords.longitude);
 
             getWeatherStatus(coorDinates[0] , coorDinates[1]);
+            
+        } , function(error) {
+
+            error.PERMISSION_DENIED? getWeatherStatus():''
         })
     };
 })();
@@ -33,7 +37,7 @@ searchInput.addEventListener('input' , function(eventInfo) {
     getSearchInputStatus(searchTerm);
 });
 
-async function getWeatherStatus(lat , lon) {
+async function getWeatherStatus(lat = 30.05, lon = 31.25) {
 
     try {
        
